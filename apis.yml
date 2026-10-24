@@ -1,25 +1,61 @@
 aid: farmwiselabs-com
+
 name: FarmWise
-description: 'FarmWise is a company surfaced via the API Evangelist harvest backlog (source: vc-portfolio;
-  backed by lemnos-labs) and added to the network as a stub for full-pipeline profiling.'
+
+description: 'FarmWise is an agri‑technology company that builds autonomous robotic systems for large‑scale farms, enabling precision weed control, crop monitoring, and data‑driven decision making. Their platform integrates hardware, AI‑powered vision, and cloud services to reduce labor costs and increase yields for growers worldwide. Backed by Lemnos Labs and other venture investors, FarmWise aims to transform modern agriculture through scalable automation solutions, supporting sustainable practices and improving food security.'
+
 url: https://raw.githubusercontent.com/api-evangelist/farmwiselabs-com/refs/heads/main/apis.yml
+
 x-type: company
+
 x-source: harvest:vc-portfolio
-x-tier: stub
-x-tier-reason: harvest
+
+x-tier: profiled
+x-tier-reason: enrichment pass 2026-10-24 (modular-v1; was harvest)
+
 specificationVersion: '0.20'
+
 created: '2026-10-24'
+
 modified: '2026-10-24'
+
 tags:
 - Company
-apis: []
+- AgriTech
+- Robotics
+- Automation
+- AI
+
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
 - FN: APIs.json
   email: info@apis.io
-x-backed-by:
-- lemnos-labs
+
 common:
+- type: Hosts
+  url: hosts/farmwiselabs-com-hosts.yml
+- type: DomainSecurity
+  url: security/farmwiselabs-com-domain-security.yml
 - type: Website
   url: https://farmwiselabs.com
+
+apis: []
+
+x-backed-by:
+- lemnos-labs
+
+x-coverage:
+  state: unreadable
+  reason: no-machine-readable-spec
+  detail: The provider's website does not expose any machine‑readable API specification or documentation.
+  evidence:
+    - url: https://farmwiselabs.com
+      status: 200
+  checked: '2026-10-24'
+x-enrichment:
+  date: '2026-10-24'
+  status: enriched
+  artifacts_added: 7
+  pass: modular-v1
+  engine: identity=local,contract=local,surfaces=local,docs=local,regulatory=local
